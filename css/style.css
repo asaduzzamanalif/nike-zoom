@@ -1,0 +1,164 @@
+/* Import Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 500px;
+    transform: rotate(-20deg);
+    transition: 1s;
+}
+
+.card-container {
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    background: linear-gradient(45deg, #40e0d0, #ff8c00, #ff0080);
+    z-index: 1;
+    transition: 1s;
+}
+
+.card-container:hover img {
+    filter: grayscale(1);
+    transform: scale(1.2);
+}
+
+.card-container > span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.card-container > span::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.247);
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+    position: absolute;
+}
+
+.card-img {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.card-details {
+    padding: 50px;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "NEW";
+    font-size: 1rem;
+    background: rgba(209, 12, 12, 0.404);
+    padding: 5px 8px;
+    margin: 5px 0 0 5px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+h1,h3 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+
+.product-info p {
+    color: #c1cfd3;
+    position: relative;
+}
+
+.card-color span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: cadetblue;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.card-color span:nth-of-type(1) {
+    background: #2474ef;
+}
+.card-color span:nth-of-type(2) {
+    background: #fa474a;
+}
+.card-color span:nth-of-type(3) {
+    background: #39bd6a;
+}
+.card-color span:nth-of-type(4) {
+    background: #fe5826;
+}
+.card-color span:nth-of-type(5) {
+    background: #434343;
+}
+
+.card-size span {
+    display: inline-block;
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card-size span:nth-of-type(3) {
+    background: #98b14d;
+    color: rgb(255, 255, 255);
+}
+
+.card-size span:hover {
+    background: #98b14d;
+    color: rgb(255, 255, 255);
+}
+
+.card-footer {
+    position: relative;
+}
+
+.card-footer a {
+    display: inline-block;
+    color: #fff;
+    background: #ff8c00;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: .5s;
+}
+
+.card-footer a:hover {
+    background: yellowgreen;
+    color: #fff;
+}
+
+.card-footer span {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
